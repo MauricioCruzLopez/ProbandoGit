@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+header {
+  background-color: rgb(160, 207, 151);
+  padding: 5px;
+  border: 1px solid black;
+  grid-column: 1 / span 2;
+}
+nav {
+  background-color: rgb(160, 207, 151);
+  padding: 5px;
+  padding-top: 20px;
+  border: 1px solid black;
+  grid-column: 1 / span 2;
+}
+#fondo {
+  background-color: rgb(230, 205, 172);
+  padding: 10px 100px 10px 100px;
+  border: 1px solid black;
+  grid-column: 1 / span 2;
+}
+article {
+  background-color: rgb(74, 190, 190);
+  padding: 5px;
+  text-align: justify;
+  border: 1px solid black;
+}
+footer {
+  background-color: rgb(207, 219, 219);
+  padding: 5px;
+  border: 1px solid black;
+  grid-column: 1 / span 2;
+}
