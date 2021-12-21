@@ -26,6 +26,7 @@ nav {
   border: 1px solid black;
   grid-column: 1 / span 2;
 }
+
 article {
   background-color: rgb(74, 190, 190);
   padding: 5px;
