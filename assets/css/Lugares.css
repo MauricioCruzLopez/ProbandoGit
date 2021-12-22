@@ -8,16 +8,16 @@
 body {
   color: black;
   font-family: Tahoma, sans-serif;
-}
-#fondo1 {
-  display: grid;
-  grid-template-areas: "head head" "article aside" "footer footer";
   background: linear-gradient(
     to bottom right,
     rgb(145, 152, 252) 5%,
     rgb(70, 70, 235),
     rgb(145, 152, 252) 50%
   );
+}
+#fondo1 {
+  display: grid;
+  grid-template-areas: "head head" "article aside" "footer footer";
 }
 #header {
   grid-area: head;
