@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  color: black;
+  font-family: Tahoma, sans-serif;
+}
+#fondo1 {
+  display: grid;
+  grid-template-areas: "head head" "article aside" "footer footer";
+  background: linear-gradient(
+    to bottom right,
+    rgb(145, 152, 252) 5%,
+    rgb(70, 70, 235),
+    rgb(145, 152, 252) 50%
+  );
+}
+#header {
+  grid-area: head;
+  padding: 2%;
+  height: 180px;
+}
+article {
+  grid-area: article;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  background-color: blanchedalmond;
+  padding-bottom: 50px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 8px;
+  font-family: Georgia, Times, "Times New Roman", serif;
+}
+article h2 {
+  grid-column: 1 / span 2;
+  font-size: 2em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+article p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+#parrafos {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  text-align: center;
+}
+#aside_roma {
+  grid-area: aside;
+  background-image: url("https://img.bekiaviajes.com/articulos/portada/68000/68170-h.jpg");
+  padding: 10px;
+  padding-top: 2%;
+  text-align: center;
+  font-family: "Arial Narrow Bold", sans-serif;
+}
+#aside_roma h1 {
+  color: rgb(252, 211, 158);
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+#formulario {
+  margin: 10px auto;
+  padding-top: 30px;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(216, 194, 162);
+  border-radius: 0px 10px 5px 0px;
+}
+#mapa {
+  margin-top: 15%;
+}
+.input {
+  width: 80%;
+  padding: 15px;
+  margin: 10px;
+}
+#formulario a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3em;
+}
+#formulario a:hover {
+  text-decoration: underline;
+}
+#button {
+  margin-top: 2%;
+  padding: 10px;
+  width: 40%;
+  font-size: 1.3em;
+  background-color: rgb(58, 97, 168);
+  cursor: pointer;
+}
+#button:active {
+  background-color: rgb(15, 20, 97);
+}
+footer {
+  grid-area: footer;
+  background-color: black;
+  padding-top: 50px;
+  height: 200px;
+  color: wheat;
+  text-align: center;
+}
+footer a {
+  color: rgb(85, 15, 85);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.2em;
+}
+footer p {
+  margin: 6px;
+}

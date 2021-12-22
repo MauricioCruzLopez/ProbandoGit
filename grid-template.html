@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        background-color:brown;
+        border:black 1px solid;
+        gap:6px;
+    }
+    #div_container{
+        display:grid;
+        grid-template:1fr 4fr 2fr/50px 1fr 50px; /*row/column*/
+    }
+    #uno{
+        grid-column: 2/span 1;
+    }
+    #tres{
+        grid-column:2/span 1;
+    }
+    #cinco{
+        grid-column:2/span 2;
+    }
+</style>
+<body>
+    <div id="div_container">
+    <div id="uno">1</div>
+    <div>2</div>
+    <div id="tres">3</div>
+    <div>4</div>
+    <div id="cinco">5</div>
+    </div>
+</body>
+</html>
