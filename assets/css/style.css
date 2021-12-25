@@ -41,7 +41,7 @@ body {
   padding: 0.3125rem;
   transition: all 0.9s;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   body {
     font-size: 0.8em;
   }
